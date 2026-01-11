@@ -6,7 +6,7 @@ Ralph is an autonomous AI agent loop that runs [Claude](https://claude.com/claud
 
 Based on [Geoffrey Huntley's Ralph pattern](https://ghuntley.com/ralph/).
 
-[Read my in-depth article on how I use Ralph](https://x.com/ryancarson/status/2008548371712135632)
+[Read this in-depth article on how I use Ralph](https://x.com/ryancarson/status/2008548371712135632)
 
 ## Prerequisites
 
@@ -36,18 +36,6 @@ Copy the skills to your Claude config for use across all projects:
 cp -r skills/prd ~/.config/claude/skills/
 cp -r skills/ralph ~/.config/claude/skills/
 ```
-
-### Configure Claude auto-handoff (recommended)
-
-Add to `~/.config/claude/settings.json`:
-
-```json
-{
-  "claude.experimental.autoHandoff": { "context": 90 }
-}
-```
-
-This enables automatic handoff when context fills up, allowing Ralph to handle large stories that exceed a single context window.
 
 ## Workflow
 
